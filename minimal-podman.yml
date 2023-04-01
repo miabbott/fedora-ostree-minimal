@@ -1,0 +1,19 @@
+releasever: 37
+
+ref: fedora/37/x86_64/minimal
+
+boot-location: modules
+documentation: false
+recommends: false
+tmp-is-dir: true
+
+repos:
+  - fedora
+  - updates
+
+packages:
+  - kernel
+  - podman
+  - selinux-policy
+  - systemd
+
