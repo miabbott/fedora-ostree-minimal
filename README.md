@@ -5,6 +5,10 @@ Holding space for minimal ostree-based OS experiments
 
 2023-June-2
 
+Iterating using [fedora-coreos-config](https://github.com/coreos/fedora-coreos-config) as a starting point.
+
+Lots of packages removed and configs slimmed down
+
 Currently building with `coreos-assembler build`
 
 Producing a QEMU disk image
