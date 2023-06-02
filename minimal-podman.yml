@@ -1,6 +1,6 @@
-releasever: 37
+releasever: 38
 
-ref: fedora/37/x86_64/minimal
+ref: fedora/38/x86_64/minimal
 
 boot-location: modules
 documentation: false
@@ -13,6 +13,7 @@ repos:
 
 packages:
   - kernel
+  - ostree
   - podman
   - selinux-policy
   - systemd
