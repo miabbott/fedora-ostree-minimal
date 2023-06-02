@@ -22,3 +22,14 @@ Can boot to the point where things fall down mounting real root
 [FAILED] Failed to start ostree-pre….service - OSTree Prepare OS/.
 See 'systemctl status ostree-prepare-root.service' for details.
 ```
+
+
+This seems to work, too:
+
+```
+sudo podman login quay.io
+sudo rpm-ostree compose tree --unified-core --repo=repo fedora-ostree-minimal/manifest.yaml
+sudo rpm-ostree compose container-encapsulate --repo=repo fedora/38/x86_64/minimal docker://quay.io/miabbott/fedora-minimal:latest
+```
+
+
